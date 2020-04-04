@@ -6,7 +6,7 @@
   "scripts": {
     "build": "browserify example/example.js -g uglifyify -o bundle.js",
     "start": "wzrd example/example.js:bundle.js",
-    "convert": "node convert.js > fox.json",
+    "convert": "node convert.js > wolf.json",
     "test": "standard index.js"
   },
   "author": "MetaMask",

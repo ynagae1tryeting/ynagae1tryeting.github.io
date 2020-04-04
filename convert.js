@@ -27,7 +27,7 @@ function parseMTL (mtl) {
   return output
 }
 
-var mtl = parseMTL(fs.readFileSync('fox.mtl').toString('utf8'))
+var mtl = parseMTL(fs.readFileSync('wolf.mtl').toString('utf8'))
 
 function parseOBJ (obj) {
   var lines = obj.split('\r\n')
@@ -82,6 +82,6 @@ function parseOBJ (obj) {
   }
 }
 
-var obj = parseOBJ(fs.readFileSync('fox.obj').toString('utf8'))
+var obj = parseOBJ(fs.readFileSync('wolf.obj').toString('utf8'))
 
 console.log(JSON.stringify(obj, null, 2))
